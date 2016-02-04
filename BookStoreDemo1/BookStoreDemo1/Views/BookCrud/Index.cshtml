@@ -6,10 +6,10 @@
 }
 
 <h2>Bookie List</h2>
-<img src="~/Content/Images/cat.gif" alt="Dancing Cat" />
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @*@Html.ActionLink("Create New", "Create")*@
+    @Html.ActionLink("Search For a Book", "Search")
 </p>
 <table class="table">
     <tr>
@@ -49,9 +49,9 @@
             @Html.DisplayFor(modelItem => item.Location)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BookId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BookId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.BookId })
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.BookId }) |*@
+            @Html.ActionLink("Details", "Details", new { id=item.BookId }) @*|
+            @Html.ActionLink("Delete", "Delete", new { id=item.BookId })*@
         </td>
     </tr>
 }

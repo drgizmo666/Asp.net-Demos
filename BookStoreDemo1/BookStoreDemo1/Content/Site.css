@@ -126,3 +126,7 @@ input[type="checkbox"].input-validation-error {
 	font-weight:bold;
 	color:#ffffff;
 }
+
+a:link {color:#ff0000;text-decoration:none;}
+a:visited {color:#0000ff;text-decoration:none;}
+a:hover {text-decoration:underline;}
