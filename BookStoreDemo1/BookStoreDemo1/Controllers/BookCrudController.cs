@@ -93,6 +93,7 @@ namespace BookStoreDemo1.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.StackLocation = new SelectList(db.Stacks.OrderBy(s => s.Location), "StackID", "Location");
             return View(bookVM);
         }
 
